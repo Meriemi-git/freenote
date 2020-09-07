@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <DropDownPreference
+        android:defaultValue="GRID"
+        android:entries="@array/notes_layout"
+        android:entryValues="@array/notes_layout"
+        android:key="notes_disposition"
+        android:title="@string/settings_layout_notes" />
+</PreferenceScreen>

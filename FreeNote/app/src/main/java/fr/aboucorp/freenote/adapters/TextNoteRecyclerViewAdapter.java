@@ -14,11 +14,11 @@ import java.util.List;
 import fr.aboucorp.freenote.R;
 import fr.aboucorp.freenote.models.TextNote;
 
-public class TextNoteViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
+public class TextNoteRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
     private final Activity context;
     private final List<TextNote> textNotes;
 
-    public TextNoteViewAdapter(Activity context, List<TextNote> textNotes) {
+    public TextNoteRecyclerViewAdapter(Activity context, List<TextNote> textNotes) {
         this.context = context;
         this.textNotes = textNotes;
     }
@@ -26,7 +26,7 @@ public class TextNoteViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View rootView = LayoutInflater.from(context).inflate(R.layout.note_layout,parent,false);
+        View rootView = LayoutInflater.from(context).inflate(R.layout.note_item_layout,parent,false);
         return new RecyclerViewViewHolder(rootView);
     }
 

@@ -4,16 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.fragments.NotesFragment"
-    android:id="@+id/fragment_notes">
+    tools:context=".views.fragments.NoteGridFragment"
+    android:id="@+id/fragment_notes_grid">
 
-
-    <androidx.recyclerview.widget.RecyclerView
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GridView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fragment_notes_gridview"/>
+    <GridView
+        android:id="@+id/fragment_notes_gridview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/fragment_notes_recycle"
-        android:scrollbars="vertical"
-        />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -24,4 +32,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@android:drawable/ic_dialog_email" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

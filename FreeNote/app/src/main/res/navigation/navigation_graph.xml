@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/launcherFragment">
+    <fragment
+        android:id="@+id/launcherFragment"
+        android:name="fr.aboucorp.freenote.views.fragments.LauncherFragment"
+        android:label="LauncherFragment" >
+        <action
+            android:id="@+id/action_launcherFragment_to_noteGridFragment"
+            app:destination="@id/noteGridFragment" />
+        <action
+            android:id="@+id/action_launcherFragment_to_noteListFragment"
+            app:destination="@id/noteListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteListFragment"
+        android:name="fr.aboucorp.freenote.views.fragments.NoteListFragment"
+        android:label="NoteListFragment" >
+        <action
+            android:id="@+id/action_noteListFragment_to_addNoteFragment"
+            app:destination="@id/addNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteGridFragment"
+        android:name="fr.aboucorp.freenote.views.fragments.NoteGridFragment"
+        android:label="fragment_notes_grid"
+        tools:layout="@layout/fragment_notes_grid" >
+        <action
+            android:id="@+id/action_noteGridFragment_to_addNoteFragment"
+            app:destination="@id/addNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNoteFragment"
+        android:name="fr.aboucorp.freenote.views.fragments.AddNoteFragment"
+        android:label="fragment_add_note"
+        tools:layout="@layout/fragment_add_note" >
+        <action
+            android:id="@+id/action_addNoteFragment_to_noteGridFragment"
+            app:destination="@id/noteGridFragment" />
+        <action
+            android:id="@+id/action_addNoteFragment_to_noteListFragment"
+            app:destination="@id/noteListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="fr.aboucorp.freenote.views.fragments.SettingsFragment"
+        android:label="SettingsFragment" >
+        <action
+            android:id="@+id/action_settingsFragment_to_noteListFragment"
+            app:destination="@id/noteListFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_noteGridFragment"
+            app:destination="@id/noteGridFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_addNoteFragment"
+            app:destination="@id/addNoteFragment" />
+    </fragment><action android:id="@+id/action_global_settingsFragment" app:destination="@id/settingsFragment"/>
+</navigation>

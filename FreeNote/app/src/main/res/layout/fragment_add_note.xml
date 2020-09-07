@@ -5,7 +5,7 @@
     android:id="@+id/fragment_add_note"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.fragments.AddNoteFragment">
+    tools:context=".views.fragments.AddNoteFragment">
 
     <ImageView
         android:id="@+id/f_add_note_img_add_text_note"

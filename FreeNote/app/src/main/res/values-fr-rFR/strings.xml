@@ -4,4 +4,5 @@
     <string name="action_settings">Paramètres</string>
     <string name="next">Suivant</string>
     <string name="previous">Précédent</string>
+    <string name="settings_layout_notes">Disposition des notes</string>
 </resources>
