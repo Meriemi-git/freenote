@@ -1,4 +1,4 @@
-package fr.aboucorp.freenote;
+package fr.aboucorp.freenote.activities;
 
 import android.os.Bundle;
 
@@ -13,6 +13,8 @@ import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
+
+import fr.aboucorp.freenote.R;
 
 public class MainActivity extends AppCompatActivity {
 
